@@ -1,0 +1,25 @@
+/* Function orders component styles */
+
+.function-section{min-height:460px;position:relative;overflow:hidden;background:var(--gold);padding:95px 15%;text-align:center;color:#2b2a20;display:flex;justify-content:center;align-items:center}
+
+.function-section>div:nth-child(2){position:relative;z-index:1;max-width:800px}
+
+.function-section .eyebrow{justify-content:center;color:#66532e}
+
+.function-section h2{font-family:var(--serif);font-size:clamp(39px,5.5vw,72px);font-weight:400;line-height:1.1;letter-spacing:-.04em;margin:0 auto 19px}
+
+.function-section p:not(.eyebrow){font-size:14px;line-height:1.8;max-width:520px;margin:0 auto 10px}
+
+.function-ta{font-family:'Noto Sans Tamil',sans-serif;font-size:12px!important}
+
+.function-deco{position:absolute;left:-40px;top:-120px;font-size:420px;line-height:1;color:#a87d3930;font-family:serif}
+
+.function-side{position:absolute;right:25px;top:50%;writing-mode:vertical-rl;transform:translateY(-50%);font-size:8px;letter-spacing:.2em;color:#755b2e}
+
+@media (max-width:760px){
+.function-section{min-height:420px;padding:75px 7%}
+.function-section h2{font-size:clamp(38px,10vw,55px)}
+.function-section p:not(.eyebrow){font-size:12px}
+.function-deco{font-size:280px;top:-55px;left:-30px}
+.function-side{display:none}
+}

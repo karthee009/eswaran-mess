@@ -1,0 +1,58 @@
+/* Shared layout, buttons, reveal animations and global utilities */
+
+.site-shell{overflow:hidden;background:var(--cream)}
+
+.status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#d9b567;box-shadow:0 0 0 3px #d9b56726}
+
+.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#a57d43;display:flex;align-items:center;gap:10px;margin:0 0 24px}
+
+.button{min-height:48px;padding:0 20px;display:inline-flex;align-items:center;justify-content:space-between;gap:22px;font-size:11px;font-weight:600;transition:transform .25s,background .25s;letter-spacing:.015em}
+
+.button:hover{transform:translateY(-3px)}
+
+.button span{font-size:17px}
+
+.button-gold{background:var(--gold);color:#24251d}
+
+.button-gold:hover{background:#e9c781}
+
+.text-link{font-size:11px;color:#f0e7d5}
+
+.text-link span{padding-left:8px;color:var(--gold)}
+
+.kolam{width:70px;height:auto;color:#b28a4b;margin-top:20px}
+
+.section-pad{padding:112px 10.5%}
+
+.meal-index{font-family:var(--serif);font-size:24px;color:#d8b878}
+
+.button-cream{background:var(--cream);margin-top:24px;min-width:235px}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+
+.reveal.seen{opacity:1;transform:translateY(0)}
+
+@keyframes ticker{to{transform:translateX(-50%)}}
+
+@keyframes heroSettle{from{transform:scale(1.09);filter:brightness(.7)}to{transform:scale(1.025);filter:brightness(1)}}
+
+@keyframes revealHero{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+@media (min-width:1500px){
+.section-pad{padding-left:max(10.5%,calc((100vw - 1250px)/2));padding-right:max(10.5%,calc((100vw - 1250px)/2))}
+}
+
+@media (max-width:1100px){
+.section-pad{padding:90px 7%}
+}
+
+@media (max-width:760px){
+.section-pad{padding:75px 6%}
+.reveal{transform:translateY(14px)}
+}
+
+@media (prefers-reduced-motion:reduce){
+\*, \*::before, \*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+.reveal{opacity:1;transform:none}
+}
+

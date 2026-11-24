@@ -1,0 +1,37 @@
+/* Contact component styles */
+
+.contact-heading h2{font-family:var(--serif);font-size:clamp(38px,4.4vw,62px);line-height:1.1;font-weight:400;letter-spacing:-.04em;margin:0;max-width:570px}
+
+.contact-heading .eyebrow{margin-bottom:20px}
+
+.contact-section{display:grid;grid-template-columns:1fr 1fr;gap:12%;align-items:center;background:var(--cream)}
+
+.contact-heading h2{font-size:clamp(42px,5vw,67px)}
+
+.contact-heading>p:last-child{font-size:13px;color:#7a7568;line-height:1.8;max-width:390px;margin-top:22px}
+
+.contact-actions{border-top:1px solid var(--line)}
+
+.contact-action{display:flex;align-items:center;gap:17px;padding:24px 0;border-bottom:1px solid var(--line);transition:padding .25s}
+
+.contact-action:hover{padding-left:8px}
+
+.action-icon{width:44px;height:44px;display:grid;place-items:center;background:#e8dfcc;color:#9c7339;font-size:19px}
+
+.contact-action>span:nth-child(2){flex:1}
+
+.contact-action small, .contact-action strong{display:block}
+
+.contact-action small{font-size:8px;letter-spacing:.18em;color:#94856a}
+
+.contact-action strong{font-size:15px;font-weight:500;margin-top:7px}
+
+.action-arrow{font-size:20px;color:#9e783f}
+
+@media (max-width:760px){
+.contact-heading h2{font-size:clamp(39px,10vw,54px)}
+.contact-section{grid-template-columns:1fr;gap:25px}
+.contact-heading>p:last-child{margin-top:15px}
+.contact-action{padding:19px 0}
+.contact-action strong{font-size:13px}
+}
