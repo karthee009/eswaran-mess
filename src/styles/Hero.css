@@ -10,6 +10,8 @@
 
 .hero-copy{max-width:700px;position:relative;z-index:2}
 
+.hero-brand-name{margin:0 0 18px;color:#f0d49a;font-family:var(--serif);font-size:clamp(21px,2.8vw,32px);font-weight:600;letter-spacing:.13em;line-height:1.2;text-transform:uppercase;text-shadow:0 2px 18px rgba(0,0,0,.24)}
+
 .hero .eyebrow{color:#e4c58c}
 
 .hero .eyebrow span{display:inline-block;width:28px;height:1px;background:var(--gold)}
@@ -69,6 +71,7 @@
 .hero{min-height:690px;min-height:min(740px,calc(100svh - 97px));padding:75px 7% 105px;align-items:center}
 .hero-image{background-position:60% center}
 .hero-overlay{background:linear-gradient(90deg,#111d16ed 0%,#17231bd1 54%,#17231b4a 100%),linear-gradient(0deg,#101a13a8,transparent 45%)}
+.hero-brand-name{font-size:clamp(18px,5vw,25px);letter-spacing:.1em;margin-bottom:14px;max-width:100%}
 .hero h1{font-size:clamp(48px,11.5vw,76px);line-height:1.06}
 .hero-desc{font-size:13px;max-width:330px}
 .hero-stamp{width:87px;height:87px;right:7%;bottom:12%;opacity:.92}
