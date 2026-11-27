@@ -117,8 +117,8 @@
 .brand-copy b {
   display: block;
   font-family: var(--serif);
-  font-size: 19px;
-  letter-spacing: .17em;
+  font-size: 23px;
+  letter-spacing: .15em;
   font-weight: 600;
   line-height: 1.15;
   transition: letter-spacing .35s ease, color .35s ease;
@@ -416,7 +416,7 @@
   }
 
   .brand-copy b {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 
@@ -451,7 +451,7 @@
   }
 
   .brand-copy b {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .brand-copy small {
@@ -621,14 +621,14 @@
   }
 
   .header.is-scrolled .brand-copy b {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 /* Mobile: compact rounded call button instead of a yellow square */
 @media (max-width: 420px) {
   .brand-copy b {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .brand-copy small {
@@ -694,7 +694,7 @@
   }
 
   .header.is-scrolled .brand-copy b {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .header.is-scrolled .header-call {
